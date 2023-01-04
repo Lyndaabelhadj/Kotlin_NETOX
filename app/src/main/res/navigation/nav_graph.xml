@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/articleFragment">
+
+
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="tn.esprit.android_netox_miniprojet.fragments.ArticleFragment"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="tn.esprit.android_netox_miniprojet.fragments.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/medecinFragment"
+        android:name="tn.esprit.android_netox_miniprojet.fragments.MedecinFragment"
+        android:label="fragment_medecin"
+        tools:layout="@layout/fragment_medecin" />
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="tn.esprit.android_netox_miniprojet.fragments.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+
+</navigation>

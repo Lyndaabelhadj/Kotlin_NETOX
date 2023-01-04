@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/dark_blue"
+    app:cardCornerRadius="8dp"
+    android:padding="8dp"
+    android:layout_margin="4dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageArticle"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:src="@drawable/article1"
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageArticle"
+            android:layout_marginTop="10dp"
+            android:text="How to Do a Digital Detox Without Unplugging Completely"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvAuthorHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_toEndOf="@id/imageArticle"
+            android:text="Author:"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/tvAuthorHint"
+            android:text="Moira Lawler"
+            android:textColor="@color/white"
+            android:layout_marginStart="4dp"/>
+
+        <!-- <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAuthorHint"
+            android:layout_toEndOf="@id/imageArticle"
+            android:rating="3"
+            android:progressTint="#960005"
+            android:secondaryProgressTint="#960005"
+            style="@style/Widget.AppCompat.RatingBar.Small"/> -->
+
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_toEndOf="@id/imageArticle"
+            android:maxLines="4"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:ellipsize="end"
+            android:layout_marginRight="4dp"
+            android:text="A study published in 2021 by the Libyan Journal of Medicine found that students who completed a social media detox reported positive changes to their mood, sleep, and anxiety. And another study, published February 2020 in Cyberpsychology, Behavior, and Social Networking, found that women who quit Instagram reported higher life satisfaction and more positive affect than women who continued using the social media app."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary:"
+            android:layout_above="@id/tvSummary"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/imageArticle"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
